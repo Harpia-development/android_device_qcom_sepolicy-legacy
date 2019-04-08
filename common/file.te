@@ -341,3 +341,6 @@ type kgsl_debugfs, debugfs_type, fs_type;
 
 #sysfs emmc dload type
 type sysfs_emmc_dload, sysfs_type, fs_type;
+
+# Themes
+type theme_data_file, file_type, data_file_type;
