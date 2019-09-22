@@ -34,10 +34,6 @@ init_daemon_domain(hal_iop_default)
 # Allow hwbinder call from hal client to server
 binder_call(hal_iop_client, hal_iop_server)
 
-# Add hwservice related rules
-add_hwservice(hal_iop_server, hal_iop_hwservice)
-allow hal_iop_client hal_iop_hwservice:hwservice_manager find;
-
 # Allow access for /proc
 allow hal_iop_default proc:file rw_file_perms;
 
